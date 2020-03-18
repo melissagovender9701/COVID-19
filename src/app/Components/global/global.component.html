@@ -1,0 +1,17 @@
+
+            <h1><span>Global</span> Statistics</h1>
+            <div class="cases">
+                <div class="row">
+                <div class="col-md-4">
+                    <h2>Cases</h2>
+                <p><animated-digit [digit]="info?.cases" [duration]="1000"></animated-digit></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Deaths</h2>
+                <p><animated-digit [digit]="info?.deaths" [duration]="1000"></animated-digit></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Recovered</h2>
+                    <p><animated-digit [digit]="info?.recovered" [duration]="1000"></animated-digit></p>
+                </div>
+        </div>

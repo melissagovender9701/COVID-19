@@ -3,18 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TopNavComponent } from './top-nav/top-nav.component';
-import { GlobalComponent } from './global/global.component';
-import { CountryComponent } from './country/country.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TopNavComponent } from './Components/top-nav/top-nav.component';
+import { GlobalComponent } from './Components/global/global.component';
+import { CountryComponent } from './Components/country/country.component';
+import { AnimatedDigitComponent } from './Components/animated-digit/animated-digit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavComponent,
     GlobalComponent,
-    CountryComponent
+    CountryComponent,
+    AnimatedDigitComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule
   ],

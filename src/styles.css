@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Volkhov&display=swap');
+body{
+    background-color: #2e2e2d !important;
+}
+app-top-nav .navbar{
+    background-color: #171716 !important;
+    text-align: center;
+}
+app-top-nav .nav-item a{
+    color: #fff !important;
+    text-align: center !important;
+    font-family: 'Cinzel', serif;
+    margin-left: 20px;
+}
+app-global h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 45px;
+    font-weight: 500;
+    font-size: 55px;
+    font-family: 'Cinzel', serif;
+}
+app-global h1 span{
+    color: red;
+}
+app-global h2{
+    color: #fff;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+app-global p{
+    color: #fff;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+app-global .cases{
+    margin-top:7em;
+}
+app-animated-digit .animated-digit {
+    display: inline-flex;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    justify-content:center;
+    align-items: center;
+    font-size:32pt;
+    font-family: 'Cinzel', serif;
+  }
