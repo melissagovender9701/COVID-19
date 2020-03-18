@@ -4,11 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
+import { GlobalComponent } from './global/global.component';
+import { CountryComponent } from './country/country.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopNavComponent
+    TopNavComponent,
+    GlobalComponent,
+    CountryComponent
   ],
   imports: [
     BrowserModule,
