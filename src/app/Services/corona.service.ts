@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class CoronaService {
 
   apiUrl = 'https://coronavirus-19-api.herokuapp.com/';
+  apiLocationUrl = 'https://coronavirus-tracker-api.herokuapp.com/v2/locations';
 
   constructor(private http: HttpClient) { }
 
@@ -16,5 +17,9 @@ export class CoronaService {
 
   getCountries() {
     return this.http.get(`${this.apiUrl}countries`);
+  }
+
+  getLocations(){
+    return this.http.get(`${this.apiLocationUrl}`);
   }
 }

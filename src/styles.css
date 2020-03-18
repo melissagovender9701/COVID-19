@@ -34,6 +34,7 @@ app-global p{
     color: #fff;
     text-align: center;
     font-family: 'Cinzel', serif;
+    font-size: 35px;
 }
 app-global .cases{
     margin-top:7em;
@@ -48,3 +49,16 @@ app-animated-digit .animated-digit {
     font-size:32pt;
     font-family: 'Cinzel', serif;
   }
+app-country h1{
+    color: #fff;
+    font-family: 'Cinzel', serif;
+}
+app-country h6{
+    color: #fff;
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+}
+app-country p{
+    color: #fff;
+    font-family: 'Cinzel', serif;
+}

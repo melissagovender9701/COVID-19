@@ -1,1 +1,28 @@
-<p>country works!</p>
+<div class="row">
+<div class="col-md-2">
+
+</div>
+<div class="col-md-8">
+    <div *ngFor="let country of countries ">
+        <h1>{{country.country}}</h1>
+        <h6>Cases:</h6>
+        <p>{{country.cases | number}}</p>
+        <h6>Today:</h6>
+        <p>{{country.todayCases | number}}</p>
+        <h6>Active:</h6>
+        <p>{{country.active | number}}</p>
+        <h6>Deaths:</h6>
+        <p>{{country.deaths | number}}</p>
+        <h6>Deaths Today:</h6>
+        <p>{{country.todayDeaths | number}}</p>
+        <h6>Recovered:</h6>
+        <p>{{country.recovered | number}}</p>
+        <h6>Critical</h6>
+        <p>{{country.critical | number}}</p>
+    </div>
+</div>
+
+<div class="col-md-2">
+
+</div>
+</div>

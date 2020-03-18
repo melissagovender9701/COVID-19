@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { CoronaService } from 'src/app/Services/corona.service';
 
 @Component({
   selector: 'app-country',
   templateUrl: './country.component.html',
   styleUrls: ['./country.component.css']
 })
-export class CountryComponent implements OnInit {
+export class CountryComponent{
+  countries: any = null;
+  searchCountry: any;
 
-  constructor() { }
+  constructor(private covidService: CoronaService) { 
 
-  ngOnInit(): void {
+    this.covidService.getCountries().subscribe((data)=>{
+      this.countries = data;
+    });
+
   }
-
 }
