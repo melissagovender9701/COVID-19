@@ -22,4 +22,12 @@ export class CoronaService {
   getLocations(){
     return this.http.get(`${this.apiLocationUrl}`);
   }
+
+  searchCountry(name:string){
+    return this.http.get(`${this.apiUrl}countries/${name}`);
+  }
+  searchCountries(title:string){
+    return fetch(`${this.apiUrl}countries/${title}`)
+    .then(response=>response.json());
+  }
 }

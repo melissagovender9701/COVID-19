@@ -6,10 +6,13 @@ import { CoronaService } from 'src/app/Services/corona.service';
   templateUrl: './country.component.html',
   styleUrls: ['./country.component.css']
 })
-export class CountryComponent{
+export class CountryComponent implements OnInit{
   countries: any = null;
-  searchCountry: any;
-
+  searchCountry: any = [];
+  country : string;
+  ngOnInit(): void {
+   
+  }
   constructor(private covidService: CoronaService) { 
 
     this.covidService.getCountries().subscribe((data)=>{
@@ -17,4 +20,12 @@ export class CountryComponent{
     });
 
   }
+
+  getCountriesd(country){
+
+    return this.covidService.searchCountries(country).then(res=>this.countries=res.Search);
+  }
+  
+
+
 }

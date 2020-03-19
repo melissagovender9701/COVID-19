@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Volkhov&display=swap');
 body{
-    background-color: #2e2e2d !important;
+    background-color: #121111 !important;
 }
 app-top-nav .navbar{
     background-color: #171716 !important;
@@ -14,21 +14,27 @@ app-top-nav .nav-item a{
     font-family: 'Cinzel', serif;
     margin-left: 20px;
 }
+app-top-nav .nav-item a:hover{
+    color: rgb(136, 0, 0) !important;
+    border-bottom: 2px solid rgb(136, 0, 0);
+}
 app-global h1{
     color: #fff;
     text-align: center;
-    margin-top: 45px;
+    margin-top: 85px;
     font-weight: 500;
     font-size: 55px;
     font-family: 'Cinzel', serif;
+    text-shadow: 10px 10px 10px #000000;
 }
 app-global h1 span{
-    color: red;
+    color: rgb(136, 0, 0);
 }
 app-global h2{
     color: #fff;
     text-align: center;
     font-family: 'Cinzel', serif;
+    text-shadow: 10px 10px 10px #000000;
 }
 app-global p{
     color: #fff;
@@ -37,7 +43,7 @@ app-global p{
     font-size: 35px;
 }
 app-global .cases{
-    margin-top:7em;
+    margin-top:10em;
 }
 app-animated-digit .animated-digit {
     display: inline-flex;
@@ -50,15 +56,74 @@ app-animated-digit .animated-digit {
     font-family: 'Cinzel', serif;
   }
 app-country h1{
-    color: #fff;
+    text-shadow: 10px 10px 10px #000000;
+    color: rgb(136, 0, 0);
     font-family: 'Cinzel', serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+app-country h3{
+   margin-bottom: 30px !important;
 }
 app-country h6{
     color: #fff;
     font-family: 'Cinzel', serif;
     font-size: 18px;
+    text-align: center;
+    text-shadow: 10px 10px 10px #000000;
 }
 app-country p{
     color: #fff;
     font-family: 'Cinzel', serif;
+    text-align: center;
+}
+app-country .card{
+    width: 18rem; 
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
+}
+app-country .card:hover{
+        box-shadow: 1px 8px 20px rgb(136, 0, 0);
+       -webkit-transition:  box-shadow .6s ease-in;
+}
+
+app-country .form-group input{
+    background-color: #212326 !important; 
+    color: gray !important; 
+    border: none !important; 
+    margin-top: 30px; 
+    height: 80px; 
+    border-radius: 3px; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align:center; 
+    font-size: 2.233em; 
+    min-width: 100% !important; 
+    padding-left: 15px; 
+    font-family: Montserrat,sans-serif;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2); 
+    text-shadow: 5px 5px 5px #353635;
+}
+app-country .form-group input:hover{
+    box-shadow: 1px 8px 20px rgb(136, 0, 0);
+   -webkit-transition:  box-shadow .6s ease-in;
+}
+app-country .form-group input:focus{
+    box-shadow: 1px 8px 20px rgb(136, 0, 0);
+   -webkit-transition:  box-shadow .6s ease-in;
+}
+app-country h2{
+    color: #fff;
+    text-align: center;
+    margin-top: 155px;
+    font-weight: 500;
+    font-size: 55px;
+    font-family: 'Cinzel', serif;
+    text-shadow: 10px 10px 10px #000000;
+}
+app-country h2 span{
+    color: rgb(136, 0, 0);
 }
